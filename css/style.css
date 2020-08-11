@@ -25,8 +25,6 @@ body {
   margin-bottom: 0px;
 }
 .header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 80px;
 }
@@ -34,6 +32,7 @@ body {
   padding: 0px;
   border: none;
   color: var(--primary-text-color);
+  margin-right: 0px;
 }
 .icon-mail {
   fill: currentColor;
@@ -47,6 +46,7 @@ body {
   padding: 0px;
   border: none;
   color: var(--primary-text-color);
+  margin-right: 0px;
 }
 .icon-smartphone {
   fill: currentColor;
@@ -68,8 +68,11 @@ h2 {
   font-style: normal;
   font-weight: bold;
 }
-.logo:hover,
-:focus {
+.logo:hover {
+  color: var(--accent-color);
+}
+.logo:focus {
+  background-color: var(--primary-white-color);
   color: var(--accent-color);
 }
 .list {
@@ -81,10 +84,10 @@ h2 {
   justify-content: space-between;
 }
 .container-1 {
-  display: inline;
+  display: flex;
   box-sizing: 294px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -96,6 +99,7 @@ h2 {
   font-size: 26px;
   line-height: 1.19;
   color: var(--primary-title-color);
+  margin-right: 85px;
 }
 .web {
   color: #2196f3;
@@ -119,8 +123,11 @@ ul {
   letter-spacing: 0.02em;
   color: var(--primary-title-color);
 }
-.nav-list:hover,
-:focus {
+.nav-list:hover {
+  color: var(--accent-color);
+}
+.nav-list:focus {
+  background-color: #ffffff;
   color: var(--accent-color);
 }
 .nav-list-1,
@@ -132,12 +139,16 @@ ul {
   color: var(--accent-color);
 }
 .nav-list-items {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding: 0px;
+  margin-right: 305px;
+  display: flex;
 }
 .contacts {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 .contacts-element-1,
 .contacts-element-2 {
@@ -155,8 +166,11 @@ ul {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-.info:hover,
-:focus {
+.info:hover {
+  color: var(--accent-color);
+}
+.info:focus {
+  background-color: #ffffff;
   color: var(--accent-color);
 }
 
@@ -473,10 +487,15 @@ ul {
   padding-left: 32px;
   justify-content: space-evenly;
 }
-.active-social-link:hover,
-:focus {
-  color: var(--accent-color);
+.active-social-link:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
+.active-social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
 .logo-client {
   display: flex;
   justify-content: center;
@@ -487,8 +506,12 @@ ul {
   border-radius: 4px;
   color: var(--primary-text-color);
 }
-.logo-client:hover,
-:focus {
+.logo-client:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.logo-client:focus {
+  background-color: var(--primary-white-color);
   color: var(--accent-color);
 }
 .section-5 {
@@ -581,6 +604,14 @@ ul {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
+.logo-2:hover {
+  background-color: var(--footer-background-color);
+  color: var(--accent-color);
+}
+.logo-2:focus {
+  background-color: var(--footer-background-color);
+  color: var(--accent-color);
+}
 .contacts-footer-conteiner {
   padding-left: 0px;
   margin-bottom: 0px;
@@ -636,6 +667,13 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.contacts:hover {
+  color: var(--accent-color);
+}
+.contacts:focus {
+  background-color: var(--footer-background-color);
+  color: var(--accent-color);
+}
 .social-link-container {
   margin-top: 78px;
   margin-bottom: 94px;
@@ -661,7 +699,11 @@ ul {
   background-color: #f5f4fa;
   color: var(--primary-title-color);
   border: 0px;
-  padding: 0px;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 4px;
 }
 .filter-button-container {
   display: flex;
@@ -678,10 +720,6 @@ ul {
 .filter-button-item {
   background-color: var(--secondary-white-color);
   border-radius: 4px;
-  padding-bottom: 6px;
-  padding-top: 6px;
-  padding-left: 22px;
-  padding-right: 22px;
 }
 
 .filter-button-item:not(:last-child) {
@@ -692,6 +730,8 @@ ul {
 :focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .list-work-name {
   font-size: 18px;
@@ -814,5 +854,4 @@ ul {
 }
 .linkedin-footer {
   background-image: url(../images/linkedin-11.svg);
-}
-*/
+}*/
